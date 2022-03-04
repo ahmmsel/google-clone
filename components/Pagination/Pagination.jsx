@@ -8,8 +8,6 @@ export default function Pagination() {
 
   const startIndex = Number(start) || 0
 
-  console.log(startIndex, start)
-
   return (
     <section className="section">
       <div className={`container ${style.pagination}`}>
