@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+@import "utility";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.6;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+@media (max-width: 769px) {
+  html {
+    font-size: small;
+  }
+}
+
+body {
+  background-color: $primary-bg;
+  color: $primary-color;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 80rem;
+}
+
+.section {
+  margin: 4rem auto;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #f8f9fa;
+  color: #3c4043;
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+  border-radius: .4rem;
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}
+
+.input {
+  width: 100%;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.primary-input {
+  background-color: transparent;
+  padding: .5rem .75rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.icon {
+  font-size: x-large;
+}
+
+.primary-icon {
+  color: #4285f4;
+}
