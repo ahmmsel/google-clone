@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .btn {
+    cursor: pointer;
+    color: #1a0dab;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
