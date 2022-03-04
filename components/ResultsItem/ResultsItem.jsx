@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 import style from "./ResultsItem.module.scss"
 
 export default function ResultsItem({ title, link, htmlSnippet }) {
@@ -5,7 +7,7 @@ export default function ResultsItem({ title, link, htmlSnippet }) {
     <div>
       <article className={style.item}>
         <h3 className={style.title}>
-          <a href={link}>{title}</a>
+          <Link href={link}>{title}</Link>
         </h3>
         <p className={style.snippet} dangerouslySetInnerHTML={{__html: htmlSnippet}}></p>
       </article>
