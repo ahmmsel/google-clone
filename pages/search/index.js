@@ -8,8 +8,7 @@ import Pagination from '../../components/Pagination'
 
 export default function SearchPage({ results }) {
   const router = useRouter()
-  console.log(results)
-
+  
   return (
     <Fragment>
       <Head>
