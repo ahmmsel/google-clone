@@ -19,6 +19,7 @@ export default function Home() {
         <Image 
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
           width={300}
+          alt="google logo"
           height={100}
         />
         <label className={style.controller}>

@@ -33,6 +33,7 @@ export default function Header() {
             src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
             width={120}
             height={40}
+            alt="google logo"
             className="pointer"
             onClick={navigateHandler}
           />
