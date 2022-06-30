@@ -24,8 +24,11 @@ export default function SearchPage({ results }) {
 export async function getServerSideProps(context) {
   const pageIndex = context.query.start || "0"
 
-  const res = await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CTX_KEY}&q=${context.query.q}&start=${pageIndex}`)
-  const data = await res.json()
+  const data = fetch(
+    `https://www.googleapis.com/customsearch/v1?key=${process.env.API_KEY}&cx=${process.env.CTX_KEY}&q=${context.query.q}&start=${pageIndex}`
+  )
+    .then((res) => res.json())
+    .catch((err) => console.error(err));
 
   return {
     props: {
